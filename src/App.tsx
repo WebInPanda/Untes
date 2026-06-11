@@ -108,7 +108,7 @@ function App() {
 
   return (
     <TooltipProvider>
-      <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+      <WouterRouter base={import.meta.env.BASE_URL ? import.meta.env.BASE_URL.replace(/\/$/, "") : ""}>
         <Layout>
           <Switch>
             <Route path="/" component={Musteriler} />
