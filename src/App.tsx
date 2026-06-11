@@ -9,6 +9,7 @@ import Urunler from "./pages/Urunler";
 import Sepet from "./pages/Sepet";
 import SatisGecmisi from "./pages/SatisGecmisi";
 import TeklifFormu from "./pages/TeklifFormu";
+import NotFound from "./pages/not-found";
 import Calculator from "./components/Calculator";
 
 function Sidebar({ onLinkClick }: { onLinkClick?: () => void }) {
@@ -116,6 +117,7 @@ function App() {
             <Route path="/sepet" component={Sepet} />
             <Route path="/gecmis" component={SatisGecmisi} />
             <Route path="/teklif" component={TeklifFormu} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </Layout>
       </WouterRouter>

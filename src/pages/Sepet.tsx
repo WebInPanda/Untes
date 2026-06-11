@@ -94,7 +94,7 @@ export default function Sepet() {
   });
 
   return (
-    <div className="flex flex-col lg:flex-row h-[calc(100vh-2rem)] gap-6 p-6 overflow-hidden">
+    <div className="flex flex-col lg:flex-row min-h-screen gap-6 p-6 overflow-hidden">
       <div className="w-full lg:w-1/2 flex flex-col gap-4 overflow-hidden">
         <div className="flex gap-4">
           <Input data-testid="input-search-cart-products" className="flex-1" placeholder="Ürün Ara..." value={search} onChange={e => setSearch(e.target.value)} />
@@ -134,7 +134,7 @@ export default function Sepet() {
         </div>
       </div>
       
-      <div className="w-full lg:w-1/2 flex flex-col h-full overflow-hidden">
+      <div className="w-full lg:w-1/2 flex flex-col h-full min-h-[calc(100vh-4rem)] overflow-hidden">
         <Card className="flex-1 flex flex-col overflow-hidden">
           <CardHeader className="py-4 border-b border-border bg-muted/20">
             <CardTitle>Sepet</CardTitle>
